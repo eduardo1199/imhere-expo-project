@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#161414',
+    backgroundColor: '#131313',
     paddingTop: 80,
     paddingLeft: 20,
     paddingRight: 20
@@ -23,7 +23,7 @@ export const styles = StyleSheet.create({
    borderRadius: 5,
    height: 60,
    padding: 16,
-   marginLeft: 15,
+   marginRight: 15,
    flex: 1,
   },
   button: {

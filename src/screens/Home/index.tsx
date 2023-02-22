@@ -3,6 +3,8 @@ import { Text, TextInput, View, TouchableOpacity } from 'react-native';
 
 import { styles } from './styles';
 
+import { Participant } from '../../components/Participant';
+
 export function Home() {
   const [title, setTitle] = useState('Eduardo Soares');
   const [quantity, setQuantity] = useState(0);
@@ -18,10 +20,6 @@ export function Home() {
       <Text style={styles.infoData}>22 de fevereiro de 2023</Text>
 
       <View style={styles.containerInputForm}>
-        <TouchableOpacity style={styles.button} onPress={handleAddQuantity}>
-          <Text style={styles.buttonText}>+</Text>
-        </TouchableOpacity>
-
         <TextInput 
           value={title}
           placeholder="Digite seu nome"
@@ -29,7 +27,14 @@ export function Home() {
           onChangeText={setTitle}
           placeholderTextColor="#555555"
         />
+        <TouchableOpacity style={styles.button} onPress={handleAddQuantity}>
+          <Text style={styles.buttonText}>+</Text>
+        </TouchableOpacity>
       </View>
+
+      <Participant />
+      <Participant />
+      <Participant />
     </View>
   );
 }
